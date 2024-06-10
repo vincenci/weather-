@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Weather from './weather';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div class="container">
+                <div class="Weather"><a href="https://www.shecodes.io/" target="_blank" rel="noopener noreferrer"><img
+                            src="/images/logo.png" class="logo" alt="SheCodes Logo"/></a>
+                    <form>
+                        <div class="row">
+                            <div class="col-9 ">
+                              <input type="search" placeholder="Enter a city.."
+                                    class="form-control search-input"/></div>
+                            <div class="col-3 p-0"><input type="submit" class="btn btn-primary w-100" value="Search"/>
+                            </div>
+                        </div>
+                    </form>
+      <Weather/>
+    </div>
+    </div>
     </div>
   );
 }
