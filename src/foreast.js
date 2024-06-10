@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./forecast.css"
 export default function WeatherForecast(){
     return(
         <div className="WeatherForecast row">
